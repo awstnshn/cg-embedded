@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Pages Test Site</title>
+  <style>
+    /* Reset some defaults */
+    body, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    /* Navigation styling */
+    nav {
+      background: #333;
+      color: #fff;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      padding: 15px 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      background: #555;
+    }
+    /* Layout styling */
+    header, main, footer {
+      padding: 20px;
+    }
+    header {
+      background: #f4f4f4;
+      text-align: center;
+    }
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      margin-top: 20px;
+    }
+    /* Widget styling */
+    .widget {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="home">
+    <h1>Welcome to the Test Site</h1>
+    <p>This page is built for testing GitHub Pages and basic widget functionality.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>Learn more about what we do and our mission.</p>
+    </section>
+    
+    <section id="services">
+      <h2>Services</h2>
+      <p>Explore the various services we offer.</p>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Get in touch with us for more information.</p>
+    </section>
+    
+    <!-- Widget: Display current date/time -->
+    <section class="widget">
+      <h3>Current Date/Time Widget</h3>
+      <button onclick="displayDateTime()">Show Date and Time</button>
+      <p id="datetime"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GitHub Pages Test Site. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Widget Functionality -->
+  <script>
+    function displayDateTime() {
+      var now = new Date();
+      document.getElementById('datetime').innerText = now;
+    }
+  </script>
+</body>
+</html>
